@@ -1,0 +1,116 @@
+<!-- Miguel Conde Luis -->
+<!-- Capitulo 4 -->
+<!-- Ejemplo 4.11 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 4.17: Ejemplo4_11.html -->
+<!-- Munú desplegable de CSS -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Men&uacute; desplegable (Ej.12)</title>
+        <link rel="stylesheet" href="style/style-ejem.css">
+        <style type="text/css">
+            body                {font-family: Arial, Helvetica, sans-serif;}
+            nav                 {
+                                font-weight: bold;
+                                color: white;
+                                border: 2px solid royalblue;       
+                                text-align: center;
+                                width: 10em;             
+                                background-color: royalblue;
+                                position: relative;
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                                margin-top: 3em;
+            }
+            nav ul              {
+                                display: none;
+                                list-style: none;
+                                margin: 0;
+                                padding: 0;
+            }
+            nav:hover ul        {display: block;}
+            nav ul li           {
+                                border-top: 2px solid royalblue;
+                                background-color: white;
+                                width: 10em;
+                                color: black;
+            }
+            nav ul li:hover     {background-color: powderblue;}
+            a                   {text-decoration: none;}    
+
+            .cont-3{
+                height: 300px;
+                overflow: auto;
+                padding: 0 1% 0 1%;
+                background-color: gainsboro;
+                width: 952px;    
+                margin-top: 1em;
+                border-radius: 8px;
+                position: relative;     /* Centrar contenedor */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 2em;
+                
+            }
+
+        </style>
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rebeccapurple;
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rebeccapurple;
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+
+         <!-- Banner para mostrar el titulo -->
+         <header>
+
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo IV</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>4.12</strong> Ejemplo | <strong>Men&uacute; desplegable</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+
+        <div class="cont-3">
+            <nav>
+                Men&uacute;
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Art&iacute;culos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </body>
+</html>

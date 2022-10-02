@@ -1,0 +1,79 @@
+<!-- Miguel Conde Luis -->
+<!-- Capitulo 4 -->
+<!-- Ejemplo 4.2 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 4.3: Ejemplo4_2.html -->
+<!-- Hojas de estilos incrustrada. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hoja de estilos incrustrada (Ej.2)</title>
+        <link rel="stylesheet" href="style/style-ejem.css">
+        <!-- esto empieza la sección de la hoja de estilo -->
+        <style type="text/css">
+            em  {font-weight: bold; color: black;}
+            h1 {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;}
+            p   {font-size: 12pt;
+                font-family: Arial, Helvetica, sans-serif;}
+            .especial {color: purple;}
+        </style>
+
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rebeccapurple;
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rebeccapurple;
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style>
+        
+    </head>
+    <body>
+
+        <!-- Banner para mostrar el titulo -->
+        <header>
+            <!-- Botón para regresar al inicio -->
+           <a href="../../index.html">
+            <label>
+                <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+            </label>
+        </a> 
+        
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo IV</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>4.2</strong> Ejemplo | <strong>Hojas de estilo incrustadas</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+
+
+        <div class="cont-2">
+            <!-- rdyr atributo aplica la clase de estilos .especial -->
+            <h1 class="especial">
+                Deitel & Associates, Inc.
+            </h1>
+    
+            <p>Deitel & Associates, Inc. es una empresa dedicada al entretenimiento corporativo y la creaci&oacute;n de contenido, que se especaliza en lenguajes de programaci&oacute;n, tecnolog&iacute;a de Internet y Web, desarrollo de aplicaciones para iPhone y Android, y educaci&oacute;n sobre la tecnolog&iacute;a de los objetos.</p>
+            
+            <h1>Clientes</h1>
+            <p class="especial">
+                Los clientes de la empresa incluyen muchas <em>compa&ntilde;&iacute;as Fortune 1000</em>, agencias gubernamentales, sectores del ej&eacute;rcito y organizaciones de negoios.
+            </p>
+        </div>
+
+    </body>
+</html>

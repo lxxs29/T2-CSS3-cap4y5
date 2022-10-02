@@ -1,0 +1,77 @@
+<!-- Miguel Conde Luis -->
+<!-- Capitulo 4 -->
+<!-- Ejemplo 4.4 -->
+
+<!DOCTYPE html>
+
+<!-- Fig, 4.8: Ejercicio4_4.html -->
+<!-- Vinculación de una hoja de estilos externa -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/style-ejem.css">
+        <link rel="stylesheet" href="style/estilos.css">
+        <title>Vinculaci&oacute;n de hojas externas (Ej.4)</title>
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rebeccapurple;
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rebeccapurple;
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <!-- Banner para mostrar el titulo -->
+        <header>
+
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo IV</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>4.4</strong> Ejemplo | <strong>Estilos conflictuados</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+        <div class="cont-2">
+            <h1>Lista de compras para el lunes: </h1>
+    
+            <ul>
+                <li>Leche</li>
+                <li>Pan
+                    <ul>
+                        <li>Pan blanco</li>
+                        <li>Pan de centeno</li>
+                        <li>Pan de trigo entero</li>
+                    </ul>
+                </li>
+                <li>Zanahoria</li>
+                <li>Yogurt</li>
+                <li>Pizza <em>con champi&ntilde;ones</em></li>
+            </ul>
+    
+            <p>
+                <em>Ir a la </em>
+                <a class="nodec" href="http://www.deitel.com">Tienda de abarrotes</a>
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!-- Miguel Conde Luis -->
+<!-- Capitulo 4 -->
+<!-- Ejemplo 4.4 -->
+
+<!DOCTYPE html>
+
+<!-- Fig 4.9: Ejemplo4_4.html -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/style-ejem.css">
+        <title>Posicionamiento absoluto (Ej.5)</title>
+        <!-- CSS -->
+        <style type="text/css">
+            .imagen_fondo { 
+                            position: absolute;
+                            top: 0px;
+                            left: 50px;
+                            z-index: 1;
+                            width: 230px;
+            }
+            .imagen_primerplano {
+                            position: absolute;
+                            top: 25px;
+                            left: 100px;
+                            z-index: 2;
+            }
+            .texto {
+                            position: absolute;
+                            top: 45px;
+                            left: 100px;
+                            z-index: 3;
+                            font-size: 22pt;
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            border: solid;
+                            color: blue;
+            }
+
+            .contenedor{
+                        position: absolute;
+                        width: 400px;
+                        justify-content: center;
+                        height: 350px;
+                        overflow: auto;
+                        padding: 0 1% 0 1%;
+                        background-color: gainsboro;
+                        width: 952px;    
+                        margin-top: 1em;
+                        border-radius: 8px;
+                        position: relative;     /* Centrar contenedor */
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        line-height: 2em;
+            }
+
+        </style>
+
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rebeccapurple;
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rebeccapurple;
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style>
+
+
+    </head>
+    <body>
+
+        <!-- Banner para mostrar el titulo -->
+        <header>
+
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo IV</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>4.5</strong> Ejemplo | <strong>Posicionamiento de los elementos</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+
+        <div class="contenedor">
+            <p><img src="img/imagen_fondo_.png" class="imagen_fondo" alt="Primero imagen posicionada"></p>
+            
+            <p><img src="img/imagen_primerplano.png" class="imagen_primerplano" alt="Segunda imagen posicionada" width="100px"></p>
+
+            <p class="texto">Texto posicionado</p>
+        </div>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios de autoevaluación -->
+<!-- 4.9 -->
+
+<!-- Cree un botón de navegación mediante el elemento div con un vínculo en su interior. Asígnele un dorde, fondo y color de texto, y haga que cambien cuando pase el ratón sobre el botón. Use una hoja de estilos externa. -->
+<!-- Asegúrese de que su hoja de estilos se vaide en http://jigsae.w3.org/css-validator/ . Tenga en cuanto que algunas advertencias tal veez no puedan evitarse, pero su CSS no deberá tener errores -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 4.9</title>
+        <link rel="stylesheet" href="css/styles-eje4_9.css">
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rebeccapurple;
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rebeccapurple;
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Banner para mostrar el titulo -->
+        <header class="banner">
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejercicios de autoevaluaci&oacute;n</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        
+        <!-- Seccion donde irán las preguntas -->
+        <section class="contenedor">
+            <div class="contenido">
+                <!-- instrucción -->
+                <p><h3><strong>4.9) </strong> Cree un botón de navegación mediante el elemento div con un vínculo en su interior. Asígnele un borde, fondo y color de texto, y haga que cambien cuando pase el ratón sobre el botón. Use una hoja de estilos externa.</h3></p>
+            </div>
+        </section>
+       
+        <!-- Desarrllo del ejercicio -->
+        <!-- Contenedor principal -->
+        <div class="cont-principal">
+            <nav>
+                Bot&oacute;n de navegaci&oacute;n
+                <ul>
+                    <li><a href="#">Opcion 1</a></li>
+                    <li><a href="#">Opcion 2</a></li>
+                    <li><a href="#">Opcion 3</a></li>
+                    <li><a href="#">Opcion 4</a></li>
+                    <li><a href="#">Opcion 5</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </body>
+</html>

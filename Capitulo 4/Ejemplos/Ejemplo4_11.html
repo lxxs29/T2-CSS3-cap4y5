@@ -1,0 +1,92 @@
+<!-- Miguel Conde Luis -->
+<!-- Capitulo 4 -->
+<!-- Ejemplo 4.10 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 4.16: Ejemplos4_10.html -->
+<!-- Tipos de medios de CSS -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/style-ejem.css">
+        <title>Tipos de medios (Ej.11)</title>
+        <style type="text/css"> 
+            @media all{
+                body {background-color:#f2f2f2;}
+                h1   {font-family: Verdana, Geneva, Tahoma, sans-serif; color: palegreen;}
+                .parrafo    {font-size: 12pt; color: white; font-family: Arial, Helvetica, sans-serif;}
+            } /* Fin de la declaracion @media all */
+            @media print {
+                body {background-color: white;}
+                h1   {color: seagreen;}
+                .parrafo    {font-size: 14pt; color: steelblue; font-family: 'Times New Roman', Times, serif;}
+            }/* Fin de la declaracion @media print */            
+            
+            .cont-3{
+                height: 100%;
+                overflow: auto;
+                padding: 0 1% 0 1%;
+                background-color:#4682b4;
+                width: 952px;    
+                margin-top: 1em;
+                border-radius: 8px;
+                position: relative;     /* Centrar contenedor */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 2em;
+                
+            }
+       
+        </style>
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rebeccapurple;
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rebeccapurple;
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+
+         <!-- Banner para mostrar el titulo -->
+         <header>
+
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo IV</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>4.11</strong> Ejemplo | <strong>Tipos de medios</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+
+        <div class="cont-3">
+            <h1>Ejemplo de tipos de medios CSS</h1>
+            <p class="parrafo">
+                Este ejemplo usa tipos de medios de CSS para variar la forma en que aparece la p&aacute;gina impresa y c&oacute;mo aparece en cualquier otro medio.
+                Este texto aparece con una fuente en la pantalla y con fuente distinta en papel o en vista previa de impresi&oacute;n. Para ver la diferencia en Internet Explorer, vaya al men&uacute; Imprimir y seleccione Vista Previa de impresi&oacute;n. En Firefox, seleccione vista preliminar del men&uacute; Imprimir.
+            </p>
+        </div>
+
+    </body>
+</html>

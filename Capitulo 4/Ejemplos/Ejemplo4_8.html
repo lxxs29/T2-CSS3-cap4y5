@@ -1,0 +1,73 @@
+<!-- Miguel Conde Luis -->
+<!-- Capitulo 4 -->
+<!-- Ejemplo 4.7 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 4.12: Ejemplo4_7.html -->
+<!-- Dimensiones de los elementos y alineación del texto. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/style-ejem.css">
+        <title>Dimensiones del cuadro (Ej.8)</title>
+        <style type="text/css">
+            .parrafo {background-color: lightskyblue; margin-bottom: .5em; font-family: Arial, Helvetica, sans-serif; margin: 1em;}
+        </style>
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rebeccapurple;
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rebeccapurple;
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Banner para mostrar el titulo -->
+        <header>
+
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo IV</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>4.8</strong> Ejemplo | <strong>Dimensiones del cuadro</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+        
+        <div class="cont-2">
+            <p class="parrafo" style="width: 20%;">
+                &Eacute;ste es un texto que va dentro de un cuadro, el cual se estira a lo largo del veinte por ciento de la anchura de la pantalla.
+            </p>
+    
+            <p class="parrafo" style="width: 80%; text-align: center;">
+                &Eacute;ste es un texto CENTRADO que va dentro de un cuadro, el cual se estira a lo largo del ochenta por ciento de la anchura de la pantalla.
+            </p>
+    
+            <p class="parrafo" style="width: 20%; height: 150px; overflow: scroll;">
+                Este cuadro solamente tiene el veinte por ciento de la anchura y una altura y una altura fija.
+                &iquest;Qu&eacute; hacemos si se desdorda? &iexcl;Ajusta la propiedad overflow a scroll.
+            </p>
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,85 @@
+/* Miguel Conde Luis */
+/* Hoja de estilos de CCS para los preguntas de auto Evaluación */
+/* Esta hoja de estilos se aplica a los siguiente a los siguientes Ejemplos
+
+
+*/
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;          /* tipo de fuente */
+    background-color: #f2f2f2;
+    font-size: 1em;                                     /* tamaño de la fuente */
+    overflow-x: hidden;
+    
+}
+
+/* Banner para mostrar el titulo de la actividad, así como el nombre del autor */
+header{
+    position: relative;
+    top: 0;
+    padding: 15px 20px;
+    width: 100%;
+    /* background-color: #333;     */
+    background-color: #00002c;    
+}
+
+.titulo{
+    font-size: 2.3em;
+    line-height: 1.5em;
+    color: #fff;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.nombre{
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #fff;
+    margin: 1px 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* estilo del contenedor de informacion */
+.cont-1{
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    padding: 0 1% 0 1%;
+    background-color: gainsboro;
+    width: 952px; 
+    margin-top: 1em;
+    border-radius: 8px;
+    position: relative;     /* Centrar contenedor */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+} */
+
+.cont-2{
+    height: 100%;
+    overflow: auto;
+    padding: 0 1% 0 1%;
+    background-color: gainsboro;
+    width: 952px;    
+    margin-top: 1em;
+    border-radius: 8px;
+    position: relative;     /* Centrar contenedor */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2em;
+    
+}

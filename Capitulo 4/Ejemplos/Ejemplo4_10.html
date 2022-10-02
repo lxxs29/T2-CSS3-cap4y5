@@ -1,0 +1,116 @@
+<!-- Miguel Conde Luis -->
+<!-- Capitulo 4 -->
+<!-- Ejemplo 4.9 -->
+
+<!DOCTYPE html>
+
+<!-- Fig, 4.15: Ejemplo4_9.html -->
+<!-- Elementos flotantes -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/style-ejem.css">
+        <title>Texto que fluye alrededor de elementos flotantes (Ej.10)</title>
+        <style type="text/css">
+            .cabecera      { 
+                            background-color: skyblue;
+                            text-align: center;
+                            font-family: Arial, Helvetica, sans-serif;
+                            padding: .5em;
+                            margin-top: 2em;
+            }
+            .parrafo          {
+                            text-align: justify;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            margin: .5em;
+            }
+            h1          {   margin-top: 0px;}
+            .flotante   {
+                            background-color: lightgray;
+                            font-size: 1.5em;
+                            font-family: Arial, Helvetica, sans-serif;
+                            padding: .2em;
+                            margin-left: .5em;
+                            float: right;
+                            text-align: right;
+                            width: 50%;               
+            }
+            .seccion    {   border: 1px solid skyblue;}
+
+
+            .cont-3{
+                height: 500px;
+                overflow: auto;
+                padding: 0 1% 0 1%;
+                background-color: gainsboro;
+                width: 952px;    
+                margin-top: 1em;
+                border-radius: 8px;
+                position: relative;     /* Centrar contenedor */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 2em;
+            }
+
+        </style>
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rebeccapurple;
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rebeccapurple;
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        
+         <!-- Banner para mostrar el titulo -->
+         <header>
+
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo IV</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>4.10</strong> Ejemplo | <strong>Texto que fluye al rededor de elementos flotantes</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+
+        <div class="cont-3">
+            <header class="cabecera"><img src="img/logo.png" alt="Deitel" width="70px"></header>
+            <section class="seccion">
+                <h1 class="flotante">Capacitac&oacute;n corporativa y creaci&oacute;n de contenido</h1>
+                <p class="parrafo">
+                    Deitel & Associates, Inc, es una empresa reconocida a nivel mundial, dedicada al entrenamiento corporativo y la creaci&oacute;n de contenido.
+                    Se especializa en lenguajes de programaci&oacute;n, tecnolog&iacute;a de Internet/Web, desarrollo de aplicaciones para iPhone y Android, y educaci&oacute;n sobre tecnolog&iacute;a de objetos.
+                    La empresa ofrece cursos sobre Java, C++, C#, Visula Basic, C, programaci&oacute;n en Internet y Web, Tecnolog&iacute;a de objetos y desarrollo de aplicaciones para iPhone y Android.
+                </p>
+            </section>
+            <section class="seccion">
+                <h1 class="flotante">Libros y videos sobre programaci&oacute;n</h1>
+                <p class="parrafo">
+                    A lo largo de su sociedad editorial con Pearson, Deitel & Associates, Inc. publica libros de texto de vanguardia sobre programaci&oacute;n, libros profesionales y cursos de video LiveLesson en DVD y basados en Web.
+                </p>
+            </section>
+        </div>
+
+    </body>
+</html>

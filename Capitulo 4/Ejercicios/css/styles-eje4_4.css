@@ -1,0 +1,61 @@
+/* Miguel Conde Luis */
+/* Hoja de estilos de CCS para los preguntas de auto Evaluación */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;          /* tipo de fuente */
+    background-color: #f2f2f2;
+    font-size: 1em;                                     /* tamaño de la fuente */
+    overflow-x: hidden;
+    /* Desarrollo del ejercicio */
+    background-image: url(../img/img-fondo.jpeg);
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    background-attachment: fixed;    
+}
+
+/* Banner para mostrar el titulo de la actividad, así como el nombre del autor */
+header{
+    position: relative;
+    top: 0;
+    padding: 15px 20px;
+    width: 100%;
+    background-color: #00002c;    
+}
+/* titulo */
+.titulo{
+    font-size: 2.3em;
+    line-height: 1.5em;
+    color: #fff;
+    margin: 15px 0;
+    text-align: center;
+}
+/* Nombre del autor */
+.nombre{
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #fff;
+    margin: 1px 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor principal */
+.contenido{
+    height: 100%;
+    overflow: auto;
+    padding: 0 1% 0 1%;
+    background-color: gainsboro;
+    width: 952px;    
+    margin-top: 1em;
+    border-radius: 8px;
+    position: relative;     /* Centrar contenedor */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.complemento{
+    position: relative;
+    top: 1000px;
+}

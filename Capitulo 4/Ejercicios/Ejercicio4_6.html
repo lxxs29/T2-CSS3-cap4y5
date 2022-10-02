@@ -1,0 +1,76 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios de autoevaluación -->
+<!-- 4.6 -->
+
+<!-- Escriba una regla de CSS que cambie el color de todos los elementos que contengam el atributo class = "verde-Mover" a verde y los desplace a 25 píxeles a la derecha. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 4.6</title>
+        <link rel="stylesheet" href="css/styles-eje4_6.css">
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rebeccapurple;
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rebeccapurple;
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Banner para mostrar el titulo -->
+        <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejercicios de autoevaluaci&oacute;n</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Seccion donde irán las preguntas -->
+        <section class="contenedor">
+            <div class="contenido">
+                <!-- instrucción -->
+                <p><h3><strong>4.6) </strong>Escriba una regla de CSS que cambie el color de todos los elementos que contengan el atributo <br> class = "verde-Mover" a verde y los desplace a 25 p&iacute;xeles hacia abajo y 15 p&iacute;xeles a la derecha.</h3></p>
+            </div>
+        </section>
+        <!-- Desarrollo del ejercicio -->
+        <div class="contenedor-eje">
+            <h1 class="verde-Mover">Titulo pertenenciente a la clase verde-Mover</h1>
+            <h2 class="verde-Mover">Subtitulo  pertenenciente a la clase verde-Mover</h2>
+
+            <p class="verde-Mover">
+                Texto de prueba con Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio reiciendis suscipit voluptas cupiditate similique vero illo quam vel. Reiciendis, dolore. Possimus ullam blanditiis animi, alias repellendus fugit aperiam quam veniam ea laborum sit nemo assumenda commodi omnis perferendis cumque provident tenetur, cupiditate consectetur perspiciatis natus quasi quaerat, nulla nobis. Architecto?
+            </p>
+
+            <h2 class="verde-Mover">Lista desarordenada pertenenciente a la clase verde-Mover</h2>
+            <ul class="verde-Mover">
+                <li class="verde-Mover">Elemento de lista con la clase verde-Mover</li>
+                <li class="verde-Mover">Elemento de lista con la clase verde-Mover</li>
+                <li class="verde-Mover">Elemento de lista con la clase verde-Mover</li>
+                <li class="verde-Mover">Elemento de lista con la clase verde-Mover</li>
+                <li class="verde-Mover">Elemento de lista con la clase verde-Mover</li>
+            </ul>
+            <br>
+            <h2 class="verde-Mover">Subtitulo pertenenciente a la clase verde-Mover</h2>
+            <p class="verde-Mover">
+                Texto de prueba con Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio reiciendis suscipit voluptas cupiditate similique vero illo quam vel. Reiciendis, dolore. Possimus ullam blanditiis animi, alias repellendus fugit aperiam quam veniam ea laborum sit nemo assumenda commodi omnis perferendis cumque provident tenetur, cupiditate consectetur perspiciatis natus quasi quaerat, nulla nobis. Architecto?
+            </p>
+
+       </div>
+    </body>
+</html>

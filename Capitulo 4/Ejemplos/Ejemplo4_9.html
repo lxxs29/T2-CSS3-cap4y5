@@ -1,0 +1,86 @@
+<!-- Miguel Conde Luis -->
+<!-- Capitulo 4 -->
+<!-- Ejemplo 4.8 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 4.14: Ejemplo4_8.html -->
+<!-- Bordes de los elementos a nivel de bloque. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/style-ejem.css">
+        <title>Bordes (Ej.9)</title>
+        <style type="text/css">
+            div         {
+                        text-align: center;
+                        width: 50%;
+                        position: relative;
+                        left: 25%;
+                        border-width: 6px;
+                        margin-top: 2em;}
+                        
+            .thick      {border-width: thick;}
+            .medium     {border-width: medium;}
+            .thin       {border-width: thin;}
+            .solid      {border-style: solid;}
+            .double     {border-style: double;}
+            .groove     {border-style: groove;}
+            .ridge      {border-style: ridge;}
+            .dotted     {border-style: dotted;}
+            .inset      {border-style: inset;}
+            .outset     {border-style: outset;}
+            .dashed     {border-style: dashed;}
+            .red        {border-color: red;}
+            .blue       {border-color: blue;}
+        </style>
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rebeccapurple;
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rebeccapurple;
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Banner para mostrar el titulo -->
+        <header>
+
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo IV</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>4.9</strong> Ejemplo | <strong>Bordes</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+
+        <div class="solid">Borde s&oacute;lido</div><hr>
+        <div class="double">Doble borde</div><hr>
+        <div class="groove">Borde ranurado</div><hr>
+        <div class="ridge">Borde rugoso</div><hr>
+        <div class="dotted">Borde punteado</div><hr>
+        <div class="inset">Borde incrustado</div><hr>
+        <div class="thick dashed">Borde grueso intermitente</div><hr>
+        <div class="thin red solid">Borde s&oacute;lido rojo delgado</div><hr>
+        <div class="medium blue solid">Borde saliente azul mediano</div><hr>
+    </body>
+</html>
