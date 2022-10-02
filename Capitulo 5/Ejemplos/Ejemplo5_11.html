@@ -1,0 +1,53 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejemplos capítulo 5 -->
+
+<!DOCTYPE html>
+<!-- Fig. 5.12: Ejercicio5_11.html -->
+<!-- Transiciones en CSS3 -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Transiciones (Ej.11)</title>
+        <link rel="stylesheet" href="styles/style-ejem.css">
+        <style type="text/css">
+            img{
+                margin: 100px;
+                -webkit-transition: -webkit-transform 4s;
+                -moz-transition: -moz-transform 4s;
+                -o-transition: -o-transform 4s;
+                transition: transform 4s;
+
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            img:hover{
+                -webkit-transform: rotate(360deg) scale(2,2);
+                -moz-transform: rotate(360deg) scale(2,2);
+                -o-transform: rotate(360deg) scale(2,2);
+                transform: rotate(360deg) scale(2,2);                
+            }
+        </style>
+    </head>
+    <body>
+         <!-- Banner para mostrar el titulo -->
+         <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="contenido">
+            <p><strong>5.11</strong> Ejemplo | <strong>Transiciones en CSS3</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+        <div class="cont-2">
+            <img src="img/logoO.png" alt="Imagen demostrativa para las transiciones" width="250px">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejemplos capítulo 5 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 5.15: Ejercicio5_13.html -->
+<!-- Incrustación de fuentes para usar en páginas Web -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fuentes incrustradas (Ej.14)</title>
+        <link rel="stylesheet" href="styles/style-ejem.css">
+        <link href="http://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            /* Cambié el elemento body por el elemento div para solo aplicar la fuente en esa sección */
+            div{
+                font-family: "Calligraffitti";
+                font-size: 48px;
+                text-shadow: 3px 3px 3px dimgrey;
+
+                /* ajustar el contenido */
+                position: relative;
+                text-align: center;
+                top: 1em;
+                left: 1em;
+            }
+
+            b{
+                position: relative;
+                top: .8em;
+            }
+            .cont-3{
+                height: 200px;
+                overflow: hidden;
+                padding: 0 1% 0 1%;
+                background-color: gainsboro;
+                width: 1200px;    
+                margin-top: 1em;
+                border-radius: 8px;
+                position: relative;     /* Centrar contenedor */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 2em;
+            }
+
+        </style>
+    </head>
+    <body>
+         <!-- Banner para mostrar el titulo -->
+         <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="contenido">
+            <p><strong>5.14</strong> Ejemplo | <strong>Incrustaci&oacute;n de fuentes para usar en p&aacute;ginas Web</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+        <section class="cont-3">
+            <div>
+                <b>Incrustrando la fuente Web de Google "Calligraffitti"</b>
+            </div>
+        </section>
+    </body>
+</html>

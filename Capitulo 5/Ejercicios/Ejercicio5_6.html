@@ -1,0 +1,81 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios -->
+<!-- 5.6 | (Sombra de texto) Cree trees elementos div de diversos. Cree tres elementos div de diversos colores, cada uno con un valor width y height de 200px. En la primera caja agregue una box-shadow dimgrey con un desplazamiento horizontal de 15px, un desplazamiento verical (vertical offset) de 15px y un radio de desenfoque de 20px. 
+En la segunda caja agregue una una box-shadow dimgrey con un desplazamiento horizontak de -15px, un desplazamiento vertical de -15px y un radio de desenfoque de 30px. 
+Ene la tercera caja agregue una box-shadow dimgrey con un desplazamiento horizontak de 15px, un deplazamiento vertical de 15px y un radio de desenfoque -->
+
+
+<!DOCTYPE html>
+
+<!-- Ejercicio5_3.html -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style-ejercicios.css">
+        <title>Ejercicio 5.6</title>
+        <style type="text/css">
+            .primero{
+                background: rgb(201, 133, 50);
+                width: 200px;
+                height: 200px;
+                box-shadow: 15px 15px 20px dimgray;
+                margin: 5em;
+            }
+            .segundo{
+                background: rgb(51, 151, 153);
+                width: 200px;
+                height: 200px;
+                box-shadow: -15px -15px 30px dimgray;
+                margin: 5em;
+            }
+            .tercero{
+                background: rgb(155, 107, 189);
+                width: 200px;
+                height: 200px;
+                box-shadow: 15px 15px 10px dimgray;
+                margin: 5em;
+            }
+            .cajas{
+                margin: 5em;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+
+        </style>
+    </head> 
+    <body>
+        <!-- Banner para mostrar el titulo -->
+        <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejercicios de autoevaluaci&oacute;n | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>5.6</strong> Ejercicio | <strong>(Sombra de texto)</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+        
+        <!-- Creando 3 elementos div -->
+        <div class="cajas">
+            <div class="primero">
+                <p>Caja 1</p>
+            </div>
+            <div class="segundo">
+                <p>Caja 2</p>
+            </div>
+            <div class="tercero">
+                <p>Caja 3</p>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>

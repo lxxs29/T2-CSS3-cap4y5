@@ -1,0 +1,80 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios -->
+<!-- 5.11 | (Fusionar imágenes) Modifique el ejemplo de la figura 5.14 utilizando cinco imágenes. Podría ser interesante probar con las imágenes de usted o de un miembro de su familia en distintas edades o en un paisaje en distintos momentos.
+Establezca el valor de transitio.-duration en 3s y de transition-timing-function en linear -->
+
+<!DOCTYPE html>
+
+<!-- Ejercicio5_11.html -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style-ejercicios.css">
+        <title>Ejercicio 5.11</title>
+        <style type="text/css">
+            #portada{
+                position: relative;
+                margin: 0 auto;
+                top: 1em;
+                left: 12em;
+            }
+            #portada img{
+                position: absolute;
+                left: 0;
+                -webkit-transition: opacity 3s linear;
+            }
+            #portada img.top:hover{  opacity: 0;  }
+            
+            .cont-3{
+                display: flex;
+                height: 500px;
+                overflow: hidden;
+                padding: 0 1% 0 1%;
+                background-color: gainsboro;
+                width: 952px;    
+                margin-top: 1em;
+                border-radius: 8px;
+                position: relative;     /* Centrar contenedor */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 2em;
+                text-align: center;
+            }
+        
+            .titulo-imagen{
+                   position: relative;               
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Banner para mostrar el titulo -->
+        <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejercicios de autoevaluaci&oacute;n | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>5.11</strong> Ejercicio | <strong>(Fusionar im&aacute;genes)</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+
+        <div class="cont-3">
+            <h1 class="titulo-imagen">
+                R&iacute;o de Janeiro
+            </h1>
+
+            <div id="portada">
+                <img src="img/Ahora_.png" alt="R&iacute;o de Janeiro - Brazil - 1930" class="bottom" width="550px">
+                <img src="img/Antes_.png" alt="R&iacute;o de Janeiro - Brazil - Actualidad" class="top" width="550px">
+            </div>
+        </div>
+    </body>
+</html>

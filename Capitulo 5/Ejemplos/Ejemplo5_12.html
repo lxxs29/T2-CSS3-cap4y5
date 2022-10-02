@@ -1,0 +1,105 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejemplos capítulo 5 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 5.13: Ejercicio5_12.html -->
+<!-- Elementos de inclinación y de transformación en CSS3 -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inclinar [skew] (Ej.12)</title>
+        <link rel="stylesheet" href="styles/style-ejem.css">
+        <style type="text/css">
+            .skew .textbox{
+                margin: 1em;
+                
+                background: lightgreen;
+                height: 100px;
+                width: 200px;
+                padding: 25px 0;
+                text-align: center;
+                font-size: 250%;
+                border: 3px solid darkgreen;
+                border-radius: 15px;
+                -webkit-animation: skew 3s infinite linear;
+                -moz-animation: skew 3s infinite linear;
+                animation: skew 3s infinite linear;
+                position: relative;
+                top: 2em;
+
+                /* centrar */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            @-webkit-keyframes skew{
+                from  {-webkit-transform: skewX(0deg);}
+                25%   {-webkit-transform: skewX(45deg);}
+                50%   {-webkit-transform: skewX(0);}
+                75%   {-webkit-transform: skewX(-45deg);}
+                to    {-webkit-transform: skewX(0);}
+            }
+            
+            @-moz-keyframes skew{
+                from  {-webkit-transform: skewX(0deg);}
+                25%   {-webkit-transform: skewX(45deg);}
+                50%   {-webkit-transform: skewX(0);}
+                75%   {-webkit-transform: skewX(-45deg);}
+                to    {-webkit-transform: skewX(0);}
+            }
+            
+            @-keyframes skew{
+                from  {-webkit-transform: skewX(0deg);}
+                25%   {-webkit-transform: skewX(45deg);}
+                50%   {-webkit-transform: skewX(0);}
+                75%   {-webkit-transform: skewX(-45deg);}
+                to    {-webkit-transform: skewX(0);}
+            }
+
+            .cont-3{
+                height: 400px;
+                overflow: auto;
+                padding: 0 1% 0 1%;
+                background-color: gainsboro;
+                width: 952px;    
+                margin-top: 1em;
+                border-radius: 8px;
+                position: relative;     /* Centrar contenedor */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 2em;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+         <!-- Banner para mostrar el titulo -->
+         <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="contenido">
+            <p><strong>5.12</strong> Ejemplo | <strong>Elementos de inclinaci&oacute;n y de transformaci&oacute;n en CSS3</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+        
+        <div class="cont-3">
+            <div class="box skew">
+                <div class="textbox">
+                    Inclinar texto
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

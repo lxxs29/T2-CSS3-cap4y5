@@ -1,0 +1,65 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios -->
+<!-- 5.8 | (Gradiante radial) 
+Cree un elemento div con una anchura (width) y altura (height) de 500px. Cree un gradiante radial con tres colores.
+Inicie el gradiente en la esquina inferiro izquierda de modo que los colores vayan cambiando al avanzar a lo largo de la línea del graiente a la dercha -->
+
+
+<!DOCTYPE html>
+
+<!-- Ejercicio5_3.html -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style-ejercicios.css">
+        <title>Ejercicio 5.8</title>
+    
+        <!-- CSS3 -->
+        <style type="text/css">
+            .radial{
+                width: 500px;
+                height: 500px;
+                padding: 10px;
+                /* Safari 5.1 a 6.0 */
+                background: -webkit-linear-gradient(left bottom, red, blue, green);
+                /* Firefox 11.1 a 12.0 */
+                background: -moz-radial-gradient(left bottom, red, blue, green);
+                /* Sintaxis estandar */
+                background: radial-gradient(left bottom, red, blue, green);
+
+                /* Ajuste */
+                margin: 2em;
+                position: relative;     /* Centrar contenedor */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <!-- Banner para mostrar el titulo -->
+        <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejercicios de autoevaluaci&oacute;n | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>5.8</strong> Ejercicio | <strong>(Gradiante radial)</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+        <di class="cont-2">
+            <div class="radial"></div>
+
+        </di>
+
+    
+    </body>
+</html>

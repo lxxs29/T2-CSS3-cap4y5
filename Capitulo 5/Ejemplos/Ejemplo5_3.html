@@ -1,0 +1,63 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejemplos capítulo 5 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 5.3: Ejercicio5_3.html -->
+<!-- Creación de efectos de sombra de texto. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sombra de caja (Ej.3)</title>
+        <link rel="stylesheet" href="styles/style-ejem.css">
+        <style type="text/css">
+            /* div -> caja1 */
+            div{
+                width: 200px;
+                height: 200px;
+                background-color: plum;
+                box-shadow: 25px 25px 50px dimgray;
+                float: left;
+                margin-right: 120px;
+                margin-top: 40px;
+                margin-left: 2em;
+            }
+            /* caja 2 */
+            #caja2{
+                width: 200px;
+                height: 200px;
+                background-color: plum;
+                box-shadow: -25px -25px 50px dimgray;
+            }
+            /* h2 */
+            h2{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Banner para mostrar el titulo -->
+        <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="contenido">
+            <p><strong>5.3</strong> Ejemplo | <strong>Creaci&oacute;n de efectos de sombra de texto</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+        <br><br>
+        <div id="caja1">
+            <h2>Sombra de caja inferior y derecha</h2>
+        </div>
+        <div id="caja2">
+            <h2>Sombra de caja superior e izquerda</h2>
+        </div>
+    </body>
+</html>

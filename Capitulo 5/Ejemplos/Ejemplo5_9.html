@@ -1,0 +1,76 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejemplos capítulo 5 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 5.10: Ejercicio5_9.html -->
+<!-- Estirar y repetir una imagen para crear un borde. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Borde de imagen (Ej.9)</title>
+        <link rel="stylesheet" href="styles/style-ejem.css">
+        <style type="text/css">
+            div{
+                border-width: 30px;
+                width: 234px;
+                padding: 20px 20px;
+            }
+            #stretch{
+                /* -webkit-border-image: url(img/gato.png) 80 80 80 80 stretch;
+                -moz-border-image: url(img/gato.png) 80 80 80 80 stretch;
+                -o-border-image: url(img/gato.png) 80 80 80 80 stretch;
+                 */
+                border: 30px solid;
+                border-image: url(img/gato.png) 80 80 stretch;
+            }
+            #repeat{
+                /* -webkit-border-image: url(img/gato.png) 34% 34% repeat;
+                -moz-border-image: url(img/gato.png) 34% 34% repeat;
+                -o-border-image: url(img/gato.png) 34% 34% repeat; */
+                border: 30px solid;
+                border-image: url(img/gato.png) 34% repeat;
+
+            }
+            .cont-3{
+                position: relative;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                
+                height: 100%;
+                overflow: auto;
+                padding: 0 1% 0 1%;
+                background-color: gainsboro;
+                width: 952px;    
+                margin-top: 1em;
+                border-radius: 8px;
+            
+            }
+        </style>
+    </head>
+    <body>
+         <!-- Banner para mostrar el titulo -->
+         <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="contenido">
+            <p><strong>5.9</strong> Ejemplo | Estirar una im&aacute;gen para crear un borde.</p>
+        </section>
+        <!-- ================================================================ -->
+        <div class="cont-3">
+            <h2>Bordes de imagen</h2>
+            <img src="img/gato.png" alt="Imagen utilizada para desmostrar los bordes">
+            <p><div id="stretch">Se estira el borde de la imagen</div></p>
+            <p><div id="repeat">Se repite el borde de la imagen</div></p>
+        </div>
+    </body>
+</html>

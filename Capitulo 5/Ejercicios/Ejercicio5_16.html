@@ -1,0 +1,109 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios -->
+<!-- 5.16 | (Consultas de medios) Cree su propia página Web multicolumna y use consultas de medios para ajustar el formato y usar una columna para dispositivos móviles que tengan una anchura máxima de 480px -->
+
+
+<!DOCTYPE html>
+
+<!-- Ejercicio5_3.html -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style-ejercicios.css">
+        <title>Ejercicio 5.16</title>
+
+        <style type="text/css">
+            /* estilos para smartphones con anchura de pantalla de 480px o menos */
+            @media handheld and (max-width: 480px),
+                screen and (max-device-width: 480px),
+                screen and (max-width: 480px)
+                {
+                    div{
+                        -webkit-column-count: 1;
+                        column-count: 1;
+
+                         /* Ajuste */
+                        margin: 4em;
+                        text-align: justify;
+                    }   
+            }
+
+            /* estilos para dispositivos con anchuras de pantalla de 481px a 1024px */
+            @media only screen and (min-width: 481px) and (min-width: 1024px) {
+                div{
+                    -webkit-column-count: 2;
+                    column-count: 2;
+                    -webkit-column-gap: 30px;
+                    column-gap: 30px;
+                    -webkit-column-rule: 1px outset black;
+                    column-rule: 1px outset black;
+
+                    /* Ajuste */
+                    margin: 4em;
+                    text-align: justify;
+                }
+            }   
+            /* estilos para dispositivos con anchuras de pantalla de 1025px o mayor */
+            @media only screen and (min-width: 1025px){
+                div{
+                    -webkit-column-count: 3;
+                    column-count: 3;
+                    -webkit-column-gap: 30px;
+                    column-gap: 30px;
+                    -webkit-column-rule: 1px outset black;
+                    column-rule: 1px outset black;
+                    /* Ajuste */
+                    margin: 4em;
+                    text-align: justify;
+                }
+            }
+            #cabecera{
+                position: relative;
+                margin-top: 2em;
+                margin-bottom: 1em;
+                background-color: #dcdcdc;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Banner para mostrar el titulo -->
+        <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejercicios de autoevaluaci&oacute;n | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>5.16</strong> Ejercicio | <strong>(Consultas de medios)</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+
+        <header id="cabecera"><h1>Titulo de prueba</h1></header>
+
+        <div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero nobis, laudantium impedit beatae repudiandae corporis. Nobis cum, vel, perspiciatis quaerat eaque perferendis nulla assumenda tempore saepe consectetur quis excepturi. Minus voluptatem animi nihil nesciunt impedit ipsam unde minima cumque explicabo esse sunt pariatur aut laudantium quae dicta consequatur asperiores repudiandae, earum reiciendis enim doloribus qui quidem quam facere! Quae, magni quam laborum sapiente impedit omnis magnam consequuntur id aliquam ullam modi sunt, unde laudantium rerum. Explicabo officia assumenda libero impedit sint asperiores distinctio quas quaerat. Quas fugit alias, a ipsum ea excepturi laboriosam asperiores ratione quo dolorem magnam! Quas quibusdam, nisi, aperiam tempore sapiente modi quidem numquam nam suscipit obcaecati quisquam repudiandae deserunt, quaerat beatae illum iste. Mollitia officiis iure ducimus, ipsum nostrum culpa, voluptatem aspernatur repellendus, nam eius vero! Cum at voluptatibus ut modi voluptates blanditiis velit. Non praesentium doloremque similique consequuntur illo aperiam architecto, odio cupiditate dolorum veniam natus temporibus id perspiciatis. Dolore, amet? Iusto optio error, inventore numquam eveniet vel. Velit corporis quidem adipisci repellendus architecto id odio? Vitae totam fuga nulla, excepturi dolores ratione recusandae perspiciatis repudiandae beatae iusto, repellat iure! Quisquam itaque ad ipsum sapiente! Nulla quam commodi, numquam laudantium eveniet natus iusto amet culpa?
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa eius nulla cumque voluptates, nam unde at iure minima beatae repellendus doloremque tempora, qui possimus dolorem est architecto tenetur facere quaerat consectetur maiores. Expedita doloribus nesciunt temporibus autem vitae sequi, omnis suscipit? Modi, tempore enim! Sit repudiandae velit quod ut quasi fugiat? Similique nostrum eligendi quidem mollitia necessitatibus nobis, suscipit beatae voluptates quia dolores cupiditate sequi, repellat provident qui officia voluptatibus? Praesentium officiis fugiat non eligendi eveniet optio consequatur saepe eum mollitia alias vero facilis ullam asperiores porro architecto, magnam voluptas in qui accusamus delectus quibusdam atque, numquam a expedita? Neque?
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur aliquam impedit adipisci corporis consectetur magnam provident quidem pariatur odio quam reprehenderit modi perferendis mollitia, consequatur, nostrum amet. Odio maiores quae minima praesentium veritatis cupiditate, distinctio repellendus vel molestias temporibus quidem fugiat quo a eveniet asperiores. Velit repellendus saepe, dicta porro facere ratione aliquid quasi perferendis aperiam, iste architecto quos beatae numquam quod ducimus voluptatum rerum sunt itaque quaerat deserunt maiores voluptas amet, vitae consequuntur? Adipisci recusandae similique neque minus debitis, optio tempore eos voluptates nobis officia dolor sapiente harum quasi.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolore ab fugiat animi doloribus suscipit, nulla ad adipisci tempore vel voluptates nemo quod, et cum, veniam enim nam. Tempore fuga aliquid a odit doloribus! Dolorem officia itaque est fuga iste consectetur temporibus dolor, tempora unde rerum ducimus consequuntur, aliquam, pariatur nihil. Debitis vitae, sint consequuntur suscipit odio ad iste architecto aperiam aliquid sed commodi maxime neque eius vero cumque dolor libero? Blanditiis itaque inventore dolorum rem velit, quod ad repellendus incidunt voluptas ut eius tenetur eos ex doloremque! Corrupti perferendis modi voluptate soluta ut minima repudiandae neque dignissimos consequatur. Voluptatum consectetur, dolores hic vitae dignissimos nihil provident qui vel aperiam perspiciatis repellendus voluptatibus atque accusamus eius molestiae repudiandae quisquam nostrum.
+            </p>
+            <footer>
+                <em>
+                    &copy; 2022 Miguel Conde Luis.
+                </em>
+            </footer>
+        </div>
+    </body>
+</html>

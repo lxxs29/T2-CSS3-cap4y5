@@ -1,0 +1,59 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejemplos capítulo 5 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 5.8: Ejemplo5_7.html -->
+<!-- Múltiples imágenes de fondo en CSS3 -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>M&uacute;ltiples fondos (Ej.7)</title>
+        <link rel="stylesheet" href="styles/style-ejem.css">
+        <style type="text/css">
+            div.fondo{
+                background-image: url(img/logo.png), url(img/fondo.png) ;
+                background-position: bottom right, 100% center;
+                background-origin: border-box, content-box;
+                background-repeat: no-repeat, repeat;
+            }
+            
+            div.contenido-1{
+                padding: 10px 15px;
+                margin-top: 1em;
+                color: white;
+                font-size: 150%;
+                text-align: justify;
+            }
+            
+        </style>
+    </head>
+    <body>  
+        <!-- Banner para mostrar el titulo -->
+        <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="contenido">
+            <p><strong>5.7</strong> Ejemplo | M&uacute;ltiples im&aacute;genes de fondo CSS3.</p>
+        </section>
+        <!-- ================================================================ -->
+
+
+        <div class="fondo">
+            <div class="contenido-1">
+                <p>
+                    Deitel & Associates, Inc. es una empresa reconocida a nivel mundial, dedicada al entretenimiento corporativo y la creaci&oacute;n de contenido. <br> La empresa ofrece cursos impartidos por instructores en los sitios de los clientes en todo el mundo sobre lenguajes de programaci&oacute;n y otros temas de software como C++, Visual C++<sup>&reg;</sup>, C, Java&trade;, C#<sup>&reg;</sup>, Visual Basic<sup>&reg;</sup>,Objective-C<sup>&reg;</sup>,XML<sup>&reg;</sup>, Python<sup>&reg;</sup>, JavaScript, tecnolog&iacute;a de objetos, programaci&oacute;n en Internet y Web, y desarrollo de aplicaciones para Android y iPhone.
+                    <br> <br><br><br><br><br><br><br><br><br><br>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

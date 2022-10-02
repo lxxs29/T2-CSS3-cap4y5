@@ -1,0 +1,101 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios -->
+<!-- 5.10 | (Inclinación) Modificación en la figura 5.13 para inclinar el elemento de arriba hacia abajo 30deg, despues de izquierda a derecha  30deg, alternando de manera indefinida. -->
+
+<!DOCTYPE html>
+
+<!-- Ejercicio5_10.html -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style-ejercicios.css">
+        <title>Ejercicio 5.10</title>
+        
+        <style type="text/css">
+            .skew .textbox{
+                margin-left: 75px;
+                background: rebeccapurple;
+                color: #fff;
+                height: 100px;
+                width: 200px;
+                padding: 25px 0;
+                text-align: center;
+                font-size: 250%;
+                border: 3px solid darkviolet;
+                border-radius: 15px;
+                -webkit-animation: skew 3s infinite alternate;
+                -moz-animation: skew 3s infinite alternate;
+                animation: skew 3s infinite alternate;
+                position: relative;
+                top: 1em;
+            
+                /* Centrar contenedor */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                top: 2em;
+            }
+            @-webkit-keyframes skew{
+                from  {-webkit-transform: skewY(-30deg);}
+                25%   {-webkit-transform: skewX(30deg);}
+                50%   {-webkit-transform: skewY(30);}
+                75%   {-webkit-transform: skewX(-30deg);}
+                to    {-webkit-transform: skewX(0);}
+            } 
+            @-moz-keyframes skew{
+                from  {-webkit-transform: skewY(-30deg);}
+                25%   {-webkit-transform: skewX(30deg);}
+                50%   {-webkit-transform: skewY(30deg);}
+                75%   {-webkit-transform: skewX(-30deg);}
+                to    {-webkit-transform: skewX(0);}
+            }
+            
+            @-keyframes skew{
+                from  {-webkit-transform: skewY(-30deg);}
+                25%   {-webkit-transform: skewX(30deg);}
+                50%   {-webkit-transform: skewY(30deg);}
+                75%   {-webkit-transform: skewX(-30deg);}
+                to    {-webkit-transform: skewX(0);}
+            } 
+            .cont-3{
+                height: 300px ;
+                overflow: auto;
+                padding: 0 1% 0 1%;
+                background-color: gainsboro;
+                width: 952px;    
+                margin-top: 1em;
+                border-radius: 8px;
+                position: relative;     /* Centrar contenedor */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Banner para mostrar el titulo -->
+        <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejercicios de autoevaluaci&oacute;n | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>5.10</strong> Ejercicio | <strong>(Inclinaci&oacute;n)</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+        <div class="cont-3">
+            <div class="box skew">
+                <div class="textbox">
+                    Inclinar texto
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

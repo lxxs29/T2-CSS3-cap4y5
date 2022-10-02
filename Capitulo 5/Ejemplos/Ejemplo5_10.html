@@ -1,0 +1,97 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejemplos capítulo 5 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 5.11: Ejemplo5_10.html -->
+<!-- Animación en CSS3. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Animaci&oacute;n (Ej.10)</title>
+        <link rel="stylesheet" href="styles/style-ejem.css">
+        <style type="text/css"> 
+            img{
+                position: relative;
+                -webkit-animation: movingimage linear 10s 1s 2 alternate;
+                -moz-animation: movingimage linear 10s 1s 2 alternate;
+                animation: movingimage linear 10s 1s 2 alternate;
+
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            @-webkit-keyframes movingimage{
+                0% { opacity: 0; left: 50px; top: 0px; }
+                25% { opacity: 1; left: 0px; top: 50px; }
+                50% { opacity: 0; left: 50px; top: 100px; }
+                75% { opacity: 1; left: 100px; top: 50px; }
+                100% { opacity: 0; left: 50px; top: 0px; }
+            }
+            
+            @-moz-keyframes movingimage{
+                0% { opacity: 0; left: 50px; top: 0px; }
+                25% { opacity: 1; left: 0px; top: 50px; }
+                50% { opacity: 0; left: 50px; top: 100px; }
+                75% { opacity: 1; left: 100px; top: 50px; }
+                100% { opacity: 0; left: 50px; top: 0px; }
+            }
+            
+            @keyframes movingimage{
+                0% { opacity: 0; left: 50px; top: 0px; }
+                25% { opacity: 1; left: 0px; top: 50px; }
+                50% { opacity: 0; left: 50px; top: 100px; }
+                75% { opacity: 1; left: 100px; top: 50px; }
+                100% { opacity: 0; left: 50px; top: 0px; }
+            }
+            .cont-1{
+                position: relative;
+                top: 1em;
+                left: 2em;
+            }
+
+            .cont-3{
+                height: 350px;
+                overflow: hidden;
+                padding: 0 1% 0 1%;
+                background-color: gainsboro;
+                width: 952px;    
+                margin-top: 1em;
+                border-radius: 8px;
+                position: relative;     /* Centrar contenedor */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 2em;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Banner para mostrar el titulo -->
+        <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="contenido">
+            <p><strong>5.10</strong> Ejemplo | Animaci&oacute;n en CSS3.</p>
+        </section>
+        <!-- ================================================================ -->
+        <section class="cont-3">
+            <div class="cont-1">
+                <img src="img/gato.png" alt="Imagen de un gato" width="138" height="180">
+            </div>
+
+        </section>
+        
+        <div></div>
+    </body>
+</html>

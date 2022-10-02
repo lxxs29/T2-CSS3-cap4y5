@@ -1,0 +1,81 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejemplos capítulo 5 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 5.9: Ejemplo5_8.html -->
+<!-- Reflejos en CSS3 -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Reflejo (Ej.8)</title>
+        <link rel="stylesheet" href="styles/style-ejem.css">
+        <style type="text/css"> 
+            img{ margin-right: 30px; }
+            img.below{
+                -webkit-box-reflect: below 5px
+                    -webkit-gradient(
+                        linear, left top, left bottom,
+                        from(transparent), to(white)
+                    );
+            }
+            img.right{
+                -webkit-box-reflect: right 5px
+                    -webkit-gradient(
+                        linear, right top, left top,
+                        from(transparent), to(white)
+                    );                
+            }
+            /* Ajustar el contenido principal */
+            .cont-1{
+                position: relative;
+                top: 2em;
+                left: 1em;
+            }
+
+            .cont-3{
+                height: 500px;
+                overflow: auto;
+                padding: 0 1% 0 1%;
+                background-color: gainsboro;
+                width: 952px;    
+                margin-top: 1em;
+                border-radius: 8px;
+                position: relative;     /* Centrar contenedor */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 2em;
+                
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <!-- Banner para mostrar el titulo -->
+        <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="contenido">
+            <p><strong>5.8</strong> Ejemplo | Reflejos en CSS3.</p>
+        </section>
+        <!-- ================================================================ -->
+        
+        <div class="cont-3">
+            <article class="cont-1">
+                <img src="img/jhtp.png" alt="portada libro Java How to Program" class="below" width="138" height="180">
+                <img src="img/jhtp.png" alt="portada libro Java How to Program" class="right" width="138" height="180">
+            </article>
+        </div>
+    </body>
+</html>

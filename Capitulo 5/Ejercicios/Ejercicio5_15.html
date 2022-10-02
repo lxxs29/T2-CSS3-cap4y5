@@ -1,0 +1,50 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios -->
+<!-- 5.15 | (Reflejo) Cree un refljo de una imagen de 20px a la derecha de la imagen -->
+
+
+<!DOCTYPE html>
+
+<!-- Ejercicio5_3.html -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style-ejercicios.css">
+        <title>Ejercicio 5.15</title>
+        <style type="text/css">
+            img{ 
+                margin-right: 30px; 
+                padding: 2em;
+            }        
+            img.right{
+                -webkit-box-reflect: right 20px
+                    -webkit-gradient(
+                        linear, right top, left top,
+                        from(transparent), to(white)
+                    );                
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Banner para mostrar el titulo -->
+        <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejercicios de autoevaluaci&oacute;n | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>5.15</strong> Ejercicio | <strong>(Reflejo)</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+
+        <div class="cont-2">
+            <img src="img/reflejo_.png" alt="teg&uacute;" class="right" width="400px">
+        </div>
+    </body>
+</html>

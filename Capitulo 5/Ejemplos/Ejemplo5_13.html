@@ -1,0 +1,74 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejemplos capítulo 5 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 5.14: Ejemplo5_13.html -->
+<!-- Fusionar una imagen en otra mediante CSS3. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fusi&oacute;n de im&aacute;genes (Ej.13)</title>
+    <link rel="stylesheet" href="styles/style-ejem.css">
+    <style type="text/css">
+        #portada{
+            position: relative;
+            margin: 0 auto;
+            top: 2em;
+            left: 20em;
+            padding: 2em;
+            
+            
+        }
+        #portada img{
+            position: absolute;
+            left: 0;
+            -webkit-transition: opacity 4s ease-in-out;
+            
+        }
+        #portada img.top:hover{  opacity: 0;  }
+        
+        .cont-3{
+            margin-top: 2em;
+            height: 550px;
+            overflow: hidden;
+            padding: 0 1% 0 1%;
+            background-color: gainsboro;
+            width: 952px;    
+            margin-top: 1em;
+            border-radius: 8px;
+            position: relative;     /* Centrar contenedor */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 2em;
+            
+        }
+    
+    </style>
+</head>
+<body>
+     <!-- Banner para mostrar el titulo -->
+     <header>
+        <!-- Botón para regresar al inicio -->
+        <a href="../../index.html">
+            <label>
+                <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+            </label>
+        </a>
+        <h1 class="titulo">Ejemplos | Cap&iacute;tulo V</h1>
+        <h4 class="nombre">Miguel Conde Luis</h4>   
+    </header>
+    <!-- Contenedor de información de la sección -->
+    <section class="contenido">
+        <p><strong>5.13</strong> Ejemplo | <strong>Fusionar una im&aacute;gen en otra mediante CSS3</strong>.</p>
+    </section>
+    <!-- ================================================================ -->
+    <section class="cont-3">
+        <div id="portada">
+            <img src="img/tra1.png" alt="imagen demostrativa - arte " class="bottom">
+            <img src="img/tra2.png" alt="imagen demostrativa - carretera" class="top">
+        </div>
+    </div>
+</body>
+</html>

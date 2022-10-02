@@ -1,0 +1,117 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejemplos capítulo 5 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 5.16: Ejemplo5_15.html -->
+<!-- Módulo de diseño de caja flexible. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Modelo de dise&ntilde;o de caja flexible (Ej.15)</title>
+        <link href="http://fonts.googleapis.com/css?family=Rosario" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="styles/style-ejem.css">
+        <style type="text/css">
+            .flexbox{
+                width: 600px;
+                height: 550px;
+                display: -webkit-box;
+                display: box;
+                -webkit-box-orient: horizontal;
+                box-orient: horizontal;
+                /* ajustar contenido */
+                position: relative;
+                top: 2em;
+                left: 40em; 
+            }
+
+            .flexbox > div {
+                -webkit-transition: 1s ease-out;
+                transition: 1s ease-out;
+                -webkit-border-radius: 10px;
+                border: 2px solid black;
+                width: 120px;
+                margin: 10px -10px 10px 0px;
+                padding: 20px 20px 20px 20px;
+                box-shadow: 10px 10px 10px dimgrey;
+            }
+
+            .flexbox > div:nth-child(1){ background-color: lightgrey; }
+            .flexbox > div:nth-child(2){ background-color: lightgrey; }
+            .flexbox > div:nth-child(3){ background-color: lightgrey; }
+            .flexbox > div:nth-child(4){ background-color: lightgrey; }
+
+            .flexbox > div:hover{
+                width: 200px;
+                color: #fff;
+                font-weight: bold;
+            }
+                /* flex */
+                .flexbox > div:nth-child(1){ background-color: royalblue; }
+                .flexbox > div:nth-child(2){ background-color: crimson; }
+                .flexbox > div:nth-child(3){ background-color: rgb(220, 103, 20); }
+                .flexbox > div:nth-child(4){ background-color: darkgreen; }
+
+            .parrafo{
+                height: 250px;
+                overflow: hidden;
+                font-family: "Rosario";
+                
+            }
+            
+            img{
+                width: 130px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+         <!-- Banner para mostrar el titulo -->
+         <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="contenido">
+            <p><strong>5.15</strong> Ejemplo | <strong>M&oacute;dulo de dise&ntilde;o de caja flexible</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+
+        <div class="flexbox">
+            <!-- Primeras sección -->
+            <div>
+                <img src="img/cali1.png" alt="Icono de buena pr&aacute;ctica de programaci&oacute;n">
+                <p class="parrafo">Las buenas pr&aacute;cticas de programaci&oacute;n indican las t&eacute;cnicas que ayudar&aacute;n a producir programas m&aacute;s claros, comprensibles y f&aacute;ciles de mantener.
+                </p>
+            </div>
+            <!-- Segunda sección -->
+            <div>
+                <img src="img/cali2.png" alt="Icono de tip para prevenir errores">
+                <p>
+                    Los tips para prevenir errores contienen sugerencias para exponer errores y eliminarlos de sus programas; muchos describen aspectos de programaci&oacute;n que evitan que los errores entren siquiera a los programas.
+                </p>
+            </div>
+            <!-- Tercera sección -->
+            <div>
+                <img src="img/cali3.png" alt="Icono de error com&uacute;n de programaci&oacute;n">
+                <p>
+                    Los errores comunes de programaci&oacute;n se&ntilde;alan los errores que cometen los estudiantes con frecuencia. Estos errores comunes de programaci&oacute;n reducen la probabilidad de que usted cometa los mismos errores.
+                </p>
+            </div>
+            <!-- Cuarta sección -->
+            <div>
+                <img src="img/cali4.png" alt="Icono de observaci&oacute;n de ingenier&iacute;a de software">
+                <p>
+                    Las observaciones de ingenier&iacute;a de software resaltan los asuntos de arquitectura y dise&ntilde;o que afectan en la construcci&oacute;n de sistemas de software, en especial a los sistemas de gran escala.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

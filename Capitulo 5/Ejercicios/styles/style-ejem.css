@@ -1,0 +1,109 @@
+/* Miguel Conde Luis */
+/* Hoja de estilos de CCS para los preguntas de auto Evaluación */
+/* Esta hoja de estilos se aplica a los siguiente ejemplos::after
+    Ejemplo5_1.html
+    Ejemplo5_2.html
+    Ejemplo5_3.html
+    Ejemplo5_4.html
+    Ejemplo5_5.html
+    Ejemplo5_6.html
+    Ejemplo5_7.html
+    Ejemplo5_8.html
+    Ejemplo5_9.html
+    Ejemplo5_10.html
+    Ejemplo5_11.html
+    Ejemplo5_12.html
+    Ejemplo5_13.html
+    Ejemplo5_14.html
+
+*/
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;          /* tipo de fuente */
+    background-color: #f2f2f2;
+    font-size: 1em;                                     /* tamaño de la fuente */
+    overflow-x: hidden;
+}
+
+/* Banner para mostrar el titulo de la actividad, así como el nombre del autor */
+header{
+    position: relative;
+    top: 0;
+    padding: 15px 20px;
+    width: 100%;
+    /* background-color: #333;     */
+    background-color: #00002c;    
+}
+
+.titulo{
+    font-size: 2.3em;
+    line-height: 1.5em;
+    color: #fff;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.nombre{
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #fff;
+    margin: 1px 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* estilo del contenedor de informacion */
+.cont-1{
+    height: 100%;
+    overflow: auto;
+    padding: 0 1% 0 1%;
+    background-color: gainsboro;
+    width: 952px;    
+    margin-top: 1em;
+    border-radius: 8px;
+    position: relative;     /* Centrar contenedor */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.cont-2{
+    height: 100%;
+    overflow: auto;
+    padding: 0 1% 0 1%;
+    background-color: gainsboro;
+    width: 952px;    
+    margin-top: 1em;
+    border-radius: 8px;
+    position: relative;     /* Centrar contenedor */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2em;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+.boton{
+    font-size: 18px;
+    padding: 15px;
+    color: #fff;
+    border: 1px solid rgb(0, 0, 0);
+    background-color:rebeccapurple;
+    border-radius: 5px;
+    font: inherit;
+    position: fixed;
+    top: 2em;
+}
+.boton:hover{
+    border: 3px solid rebeccapurple;
+    background-color:  rgb(0, 0, 0);
+    cursor: pointer;
+}

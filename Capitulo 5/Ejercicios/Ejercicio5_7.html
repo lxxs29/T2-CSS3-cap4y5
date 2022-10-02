@@ -1,0 +1,54 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios -->
+<!-- 5.7 | Cree un elemento div con una anchura (width) y altura (height) de 500px. Cree un gradiante lineal diagonal utilizando los colores del arcoíris: rojo, naranja, amarillo, verde, azul, índigo, violeta. -->
+
+
+<!DOCTYPE html>
+
+<!-- Ejercicio5_3.html -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style-ejercicios.css">
+        <title>Ejercicio 5.7</title>
+        
+        <!-- CSS3 -->
+        <style type="text/css">
+            .arcoiris{
+                width: 500px;
+                height: 500px;
+                margin-top: 2em;
+                margin-bottom: 2em;
+                padding: 5em;
+                position: relative;     /* Centrar contenedor */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                background: -webkit-gradient(linear, left top, right bottom);
+                background: linear-gradient(135deg,red,orange,yellow,green,blue,#4b0082,violet); /* Standard syntax */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Banner para mostrar el titulo -->
+        <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejercicios de autoevaluaci&oacute;n | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>5.7</strong> Ejercicio | <strong>(Gradiante lineal)</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+        <div class="cont-2">
+            <!-- Crear div para el gradiante con colores del arcoiris -->
+            <div class="arcoiris"></div>
+        </div>
+    </body>
+</html>

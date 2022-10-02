@@ -1,0 +1,62 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios -->
+<!-- 5.14 | (Transformación con :hover) Cree un programa de transformación que incluya cuatro imágenes. Caundo el usuario pase el ratón sobre una imagen, el tamaño de ésta debe aumentar por 20%  -->
+
+
+<!DOCTYPE html>
+
+<!-- Ejercicio5_3.html -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style-ejercicios.css">
+        <title>Ejercicio 5.14</title>
+        <style type="text/css">
+            img{
+                margin: 50px;
+                position: relative;
+                display: grid;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+            /* Amento del 20% en la imagen */
+            img:hover{
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                transform: scale(1.2);
+
+            }
+            #texto{
+                text-align: center;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <!-- Banner para mostrar el titulo -->
+        <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejercicios de autoevaluaci&oacute;n | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="cont-1">
+            <p><strong>5.14</strong> Ejercicio | <strong>(Transformaci&oacute;n con :hover)</strong> .</p>
+        </section>
+        <!-- ================================================================ -->
+
+        <div class="cont-2">
+            <h2 id="texto">Aumento de 20%</h2>
+            <img src="img/escala.png" alt="" width="200px">
+            <img src="img/escala2.png" alt="" width="200px">
+            <img src="img/escala3.png" alt="" width="200px">
+            <img src="img/escala4.png" alt="" width="200px">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejemplos capítulo 5 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 5.2: esquinas redondeadas -->
+<!-- Uso de border radius para agregar esquinas redondeadas a dos elemento. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Esquinas redondeadas (Ej.2)</title>
+        <link rel="stylesheet" href="styles/style-ejem.css">
+        <style type="text/css">
+            .redonda1{
+                border: 3px solid navy;
+                padding: 5px 20px;
+                background: lightcyan;
+                width: 200px;
+                text-align: center;
+                border-radius: 15px; /* agregar esquinas redondeadas */
+                margin-bottom: 20px;
+                margin-top: 20px;
+                /* centrar */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #redonda2{
+                border: 3px solid navy;
+                padding: 5px 20px;
+                background: lightcyan;
+                width: 200px;
+                text-align: center;
+                border-radius: 50px; /* aumenta border-radius */
+                margin-bottom: 20px;
+                /* centrar */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Banner para mostrar el titulo -->
+        <header>
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo">Ejemplos | Cap&iacute;tulo V</h1>
+            <h4 class="nombre">Miguel Conde Luis</h4>   
+        </header>
+        <!-- Contenedor de información de la sección -->
+        <section class="contenido">
+            <p><strong>5.2</strong> Ejemplo | <strong>Uso de border radius para agregar esquinas redondeadas a dos elemento</strong>.</p>
+        </section>
+        <!-- ================================================================ -->
+
+        <div class="cont-2">
+            <div class="redonda1">
+                La propiedad border-radius agrega esquinas redondeadas a un elemento.
+            </div>
+    
+            <div id="redonda2">
+                Al aumentar el valor de border-radius se redondean a&uacute;n m&aacute;s con las esquinas del elemento.
+            </div>
+
+        </div>
+    </body>
+</html>
